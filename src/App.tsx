@@ -3,21 +3,16 @@ import { useState } from "react";
 import { AiFillBug } from "react-icons/ai";
 
 function App() {
-  const [isVisible, setVisibility] = useState(false);
-  const [isApproved, setApproved] = useState(true);
-  let count = 0;
+  const [person, setPerson] = useState({
+    firstName: "owen",
+    lastName: "badgley",
+  });
+  const [isLoading, setLoading] = useState("false");
+  const fullName = person.firstName + " " + person.lastName;
 
-  const handleClick = () => {
-    count++;
-    setVisibility(true);
-    console.log(count);
-  };
+  const handleClick = () => {};
 
-  return (
-    <div>
-      <button onClick={handleClick}>show</button>
-    </div>
-  );
+  return <div>{fullName}</div>;
 }
 
 export default App;
