@@ -1,5 +1,6 @@
 import ListGroup from "./components/ListGroup";
 import { useState } from "react";
+import { AiFillBug } from "react-icons/ai";
 
 function App() {
   let items = ["New York", "Los Angeles", "San Francisco"];
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div>
+      <AiFillBug></AiFillBug>
       <ListGroup
         items={items}
         heading={heading}
