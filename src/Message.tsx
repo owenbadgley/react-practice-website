@@ -1,10 +1,8 @@
+let count = 0;
+
 function Message() {
-    const name = 'Owen';
-    if (name){
-        return <h1>Hello {name}</h1>;
-    } else{
-        return <h1>Hello World</h1>
-    }
+  count++;
+  return <div>Message {count}</div>;
 }
 
 export default Message;

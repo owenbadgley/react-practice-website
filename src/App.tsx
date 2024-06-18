@@ -1,18 +1,13 @@
-import ListGroup from "./components/ListGroup";
-import { useState } from "react";
-import { AiFillBug } from "react-icons/ai";
+import Message from "./Message";
 
 function App() {
-  const [person, setPerson] = useState({
-    firstName: "owen",
-    lastName: "badgley",
-  });
-  const [isLoading, setLoading] = useState("false");
-  const fullName = person.firstName + " " + person.lastName;
-
-  const handleClick = () => {};
-
-  return <div>{fullName}</div>;
+  return (
+    <div>
+      <Message></Message>
+      <Message></Message>
+      <Message></Message>
+    </div>
+  );
 }
 
 export default App;
