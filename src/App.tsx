@@ -1,4 +1,4 @@
-import Like from "./components/Like";
+import Like from "./components/Like/Like";
 
 function App() {
   return (
