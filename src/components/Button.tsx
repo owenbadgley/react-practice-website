@@ -10,7 +10,7 @@ interface Props {
 const Button = ({ children, onClick, color = "primary" }: Props) => {
   return (
     <div>
-      <button type="button" className={"btn btn-" + color} onClick={onClick}>
+      <button type="button" className={AiOutlineLike} onClick={onClick}>
         {children}
       </button>
     </div>
