@@ -1,5 +1,4 @@
 import ListGroup from "./components/ListGroup";
-import "./App.css";
 import { useState } from "react";
 
 function App() {
