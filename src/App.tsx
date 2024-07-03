@@ -1,9 +1,21 @@
-import Form from "./components/form";
+import { useEffect, useRef } from "react";
 
 function App() {
+  const ref = useRef<HTMLInputElement>(null);
+
+  //afterRender
+  useEffect(() => {
+    if (ref.current) ref.current.focus();
+  });
+  //side effect
+
+  useEffect(() => {
+    document.title = "My App";
+  });
+
   return (
     <div>
-      <Form></Form>
+      <input ref={ref} type="text" className="form-control" />
     </div>
   );
 }
