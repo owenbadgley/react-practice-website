@@ -21,7 +21,7 @@ constructor(endpoint: string) {
     }
 
     delete(id: number) {
-        return apiClient.delete(this.endpoint + id)
+        return apiClient.delete(this.endpoint + "/"+ id)
     }
 
     add<T>(entity: T){
